@@ -13,7 +13,11 @@ export class AppComponent {
     colors: ['Red', 'Blue', 'Yellow', 'White', 'Black', 'Green', 'Orange'],
     components: [{title: 'hii'}, {title: 'bye'}],
   };
+  selectedArr: any = [];
 
   ngOnInit() {
+  }
+
+  ngAfterViewChecked() {
   }
 }

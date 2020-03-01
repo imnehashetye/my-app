@@ -35,11 +35,12 @@
 }
 
 #style-4::-webkit-scrollbar {
-    width: 14px;
+    width: 13px;
     background-color: white;
 }
 
 #style-4::-webkit-scrollbar-thumb {
+    border-radius: 10px;
     background-color: #b6b1b1;
     border: 2px solid #a6a6a6;
 }

@@ -9,9 +9,9 @@ export class HomeComponent implements OnInit {
   @Input() searchable: boolean;
   @Input() parentArray: any = [];
   @Input() childArrayObj: any = {};
+  @Input() selectedArr: any = [];
   type: any = '';
   dropdownList: any = [];
-  selectedArr: any = [];
   marked = false;
   result: string;
   searchText: string;
@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
     if (this.marked) {
       this.selectedArr = this.dropdownList.map(x => (Object.assign(x, { checked: true })));
     } else {
+      this.result = '';
       this.selectedArr = [];
       this.dropdownList.map(x => (Object.assign(x, { checked: false })))
     }
