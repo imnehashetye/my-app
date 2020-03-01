@@ -11,7 +11,7 @@ export class AppComponent {
   parentArray: any = ['Colors', 'Components'];
   childArrayObj: any = {
     colors: ['Red', 'Blue', 'Yellow', 'White', 'Black', 'Green', 'Orange'],
-    components: [{title: 'hii'}, {title: 'bye'}],
+    components: [{ title: 'hii' }, { title: 'bye' }, { title: 'head' }, { title: 'desk'}, { title: 'tree'}],
   };
   selectedArr: any = [];
 
