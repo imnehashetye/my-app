@@ -31,7 +31,7 @@
                             <label class="main">
                             <input type="checkbox" [(ngModel)]="data.checked" (change)="selectedItems(data)"> 
                             <span class="geekmark rounded"></span> 
-                            <span class="ml-4 text-font">{{data.title}}</span> 
+                            <span class="ml-4 text-font" [ngClass]="{ 'selected-text-color':data.checked }">{{data.title}}</span> 
                             </label>
                         </li>
                     </ul>

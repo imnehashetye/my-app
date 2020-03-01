@@ -15,13 +15,18 @@
     text-align: left;
 }
 
+.selected-text-color {
+    color: #7159d1;
+    font-weight: bold;
+}
+
 .text-font {
     font-size: 17px;
 }
 
 .card-container {
     overflow-y: auto;
-    max-height: 125px;
+    max-height: 163px;
 }
 
 #style-4::-webkit-scrollbar-track {
