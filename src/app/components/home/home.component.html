@@ -1,0 +1,58 @@
+<div style="text-align:center">
+    <div>
+        <div class=''>
+            <div class=''>
+                <div class='h4 pt-5 w-100' style='text-align: left;'>Dropdown with search</div>
+                <div>
+                    <h5 class='pull-left mt-4'>Default</h5>
+                    <select class='form-control' style='border: 1px solid #e0e4e8;height: 40px !important;' [(ngModel)]="type" (change)="onSelect()">
+                      <option disabled>Select</option>
+                      <option *ngFor="let suit of parentArray">{{suit}}</option>
+                  </select>
+                </div>
+                <div>
+                    <h4 class='mt-4 w-100 text-left'>Dropdown</h4>
+                    <div *ngIf='searchable'>
+                        <input type="text" class="form-control" id="alterEgo" style='height: 40px;border: 1px solid #e0e4e8;' placeholder="Search">
+                    </div>
+                    <div style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
+                        <div>
+                            <div class='select-all rounded mt-1'>
+                                <input type="checkbox" class='check-box' [(ngModel)]="theCheckbox" (change)="toggleVisibility($event)" />
+                                <div class='icon-container rounded' *ngIf='!marked'>
+                                    <i class="minus-icon"></i>
+                                </div>
+                                <div class='icon-container rounded' *ngIf='marked'>
+                                    <i class="plus-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-container" id="style-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style='height: 40px;padding:5px 15px;' *ngFor="let data of dropdownList; let i = index">
+                                    <label class="main">
+                                    <input type="checkbox" [(ngModel)]="data.checked" (change)="selectedItems(data)"> 
+                                    <span class="geekmark rounded"></span> 
+                                    <span class="ml-4 text-font">{{data.title}}</span> 
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='footer'>
+                            <div class='pull-right p-3'>
+                                <button type="button" class="button" (click)='toggleVisibility($event)'>Clear</button>
+                                <button type="button" class="button" style='color:#42d598;margin-left: 30px;' (click)='show()'>Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h5 class='pull-left mt-4'>Result</h5>
+                    <select class='form-control' style='border: 1px solid #e0e4e8;height: 40px !important;' [(ngModel)]="result">
+                      <option>{{result}}</option>
+                  </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
