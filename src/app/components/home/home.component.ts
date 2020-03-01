@@ -13,8 +13,8 @@ export class HomeComponent implements OnInit {
   dropdownList: any = [];
   selectedArr: any = [];
   marked = false;
-  theCheckbox = false;
   result: string;
+  searchText: string;
   
   toggleVisibility(e){
     this.marked= e.target.checked;

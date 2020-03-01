@@ -6,6 +6,11 @@
     bottom: 0;
 }
 
+.dropdown-container {
+    border: 1px solid #e0e4e8;
+    height: 40px !important;
+}
+
 .text-left {
     text-align: left;
 }
@@ -45,83 +50,6 @@
     font-weight: bold;
 }
 
-// .select-all {
-//     height: 40px;
-//     border: 1px solid #ececec;
-//     background-color: #ffffff;
-//     padding: 5px 15px;
-// }
-// .select-main {
-//     margin: 0;
-//     display: flex;
-//     align-items: center;
-//     cursor: pointer;
-//     font-size: 20px;
-// }
-// input[type=checkbox] {
-//     visibility: hidden;
-// }
-// input[type="checkbox"]:not(:checked) {
-//     /* Explicit Unchecked Styles */
-//     border: 1px solid #FF0000; // Only apply border to unchecked state
-//   }
-// .sign {
-//     // content: "-";
-//     position: relative;
-//     top: -6px;
-//     color: white;
-//     border: solid white;
-//     border-width: 2px 0 0 0;
-// }
-// .sign::before input:checked~.geekmark1 {
-//     display: none !important;
-//     content: " ";
-// }
-// .select-main input:checked~.sign {
-//     background-color: black;
-// }
-// .sign:after {
-//     content: "";
-//     display: none !important;
-// }
-// .select-main input:checked~.sign:after {
-//     display: block !important;
-//     // content: '\2714';
-// }
-// .select-main .geekmark1:before {
-//     position: relative;
-//     left: 8px;
-//     top: 4px;
-//     width: 7px;
-//     height: 12px;
-//     border: solid white;
-//     border-width: 0 2px 2px 0;
-// }
-// .select-main .geekmark1:before {
-//     display: block;
-// }
-// .select-main .sign:after {
-//     // content: '\2714';
-//     position: relative;
-//     top: 0px;
-//     color: white;
-//     // position: relative;
-//     left: 8px;
-//     top: 4px;
-//     width: 7px;
-//     height: 12px;
-//     border: solid white;
-//     border-width: 0 2px 2px 0;
-//     -webkit-transform: rotate(45deg);
-//     transform: rotate(45deg);
-// }
-// .geekmark1 {
-//     height: 25px;
-//     width: 25px;
-//     background-color: black;
-//     border: 1px solid;
-//     float: left;
-// }
 .main {
     margin: 0;
     display: flex;
